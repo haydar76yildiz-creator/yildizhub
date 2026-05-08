@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldız Hub - Lojistik ve Dayanışma Merkezi</title>
+    <style>
+        /* Sayfa Düzeni */
+        body, html { height: 100%; margin: 0; font-family: 'Segoe UI', Arial, sans-serif; overflow: hidden; }
+        
+        /* Arka Plan Görseli (Tır) */
+        .bg-image {
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            z-index: -1; 
+            filter: brightness(0.4); /* Arka planı biraz karartıyoruz ki yazılar okunsun */
+            object-fit: cover;
+        }
+
+        /* Giriş Kartı Konumu */
+        .container {
+            height: 100%; display: flex; align-items: center; justify-content: center;
+            background: rgba(0,0,0,0.2);
+        }
+
+        /* Cam Efektli Giriş Kartı */
+        .login-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 40px; border-radius: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center; color: white; width: 320px;
 
