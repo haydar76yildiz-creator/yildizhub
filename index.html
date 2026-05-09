@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yıldız Hub - Lojistik ve Dayanışma Merkezi</title>
+    <title>Yıldız Hub - Nakliyat & Lojistik</title>
     <style>
-        /* Sayfa Düzeni */
-        body, html { height: 100%; margin: 0; font-family: 'Segoe UI', Arial, sans-serif; overflow: hidden; }
-        
-        /* Arka Plan Görseli (Tır) */
-        .bg-image {
-            position: fixed; right: 0; bottom: 0;
-            min-width: 100%; min-height: 100%;
-            z-index: -1; 
-            filter: brightness(0.4); /* Arka planı biraz karartıyoruz ki yazılar okunsun */
-            object-fit: cover;
+        /* Sayfa Ayarları */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
-        /* Giriş Kartı Konumu */
+        /* Arka Plan Görseli */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('tır.jpg'); /* DOSYA ADI BURAYLA AYNI OLMALI */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* Yazı Alanı */
         .container {
-            height: 100%; display: flex; align-items: center; justify-content: center;
-            background: rgba(0,0,0,0.2);
+            text-align: center;
+            border: 2px solid #f1c40f;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
         }
 
-        /* Cam Efektli Giriş Kartı */
-        .login-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            padding: 40px; border-radius: 25px;
-            border: 1px solid rgba(255,255,255,0.2);
-            text-align: center; color: white; width: 320px;
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #f1c40f;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
 
+        p {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 15px;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <h1>YILDIZ HUB</h1>
+        <p>"Hem Yolda, Hem Tarlada..."</p>
+    </div>
+
+</body>
+</html>
